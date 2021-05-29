@@ -1,6 +1,12 @@
-const NB_IMAGE = 3
-var i
+function prin(nb) {
+    console.log("slt");
+    var i, f
+    for (i = 1; i <= nb; i++) {
+        f = document.createElement("img")
+        f.setAttribute("src", "images/"+i+".png")
+        f.setAttribute("class", "image")
+        f.setAttribute("id", i)
 
-for (i = 0; i < 0; i++) {
-
+        document.getElementById("liste").appendChild(f)
+    }
 }
