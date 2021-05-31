@@ -18,3 +18,21 @@ th {
     text-align: center;
     /*border-spacing: 100px;*/
 }
+
+#liste {
+    margin: auto;
+    width: 100%;
+}
+
+.ligne {
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+}
+
+.image {
+    margin: auto;
+    height: 20%;
+    width: 20%;
+}
