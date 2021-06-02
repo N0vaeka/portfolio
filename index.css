@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: rgb(197, 77, 77);
 }
 
 h1 {
@@ -20,19 +20,30 @@ th {
 }
 
 #liste {
-    margin: auto;
     width: 100%;
+    text-align: center;
 }
 
 .ligne {
-    display: inline-block;
-    margin: auto;
     width: 100%;
-    justify-content: center;
 }
 
 .image {
-    margin: auto;
     height: 20%;
     width: 20%;
+}
+/* responsif ?
+@media only screen and (max-width : 600px) {
+    .image {
+        height: 200px;
+        width: 200px;
+    }
+}
+*/
+
+/* pas d'impression */
+@media print {
+    .image {
+        display: none;
+    }
 }
