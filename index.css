@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: #ffffff;
 }
 
 h1 {
@@ -7,14 +7,88 @@ h1 {
     font-size: 50px;
 }
 
-table,
-td,
-th {
+table {
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
-    /*border: 1px solid black;
-    border-collapse: collapse;*/
+    margin-bottom: 3%;
+}
+
+td {
+    width: 10%;
     text-align: center;
-    /*border-spacing: 100px;*/
+}
+
+#liste {
+    text-align: center;
+}
+
+a {
+    color: #000000;
+}
+a:hover{
+    color: #da8fce;
+}
+
+.image {
+    height: 15%;
+    width: 15%;
+    margin: 0.5%;
+}
+
+.image:hover {
+    box-shadow: 0px 0px 15px grey;
+    height: 16%;
+    width: 16%;
+    margin: 0%;
+}
+
+.pli {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .pli:hover {
+    background-color: #ccc;
+}
+
+.pli-txt {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.pli:after {
+    content: '\02795';
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2796";
+ }
+
+/* responsif ?
+@media only screen and (max-width : 600px) {
+    .image {
+        height: 200px;
+        width: 200px;
+    }
+}
+*/
+
+/* pas d'impression */
+@media print {
+    .image {
+        display: none;
+    }
 }
