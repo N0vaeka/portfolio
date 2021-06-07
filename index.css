@@ -4,18 +4,21 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
+    font-family: 'VT323', monospace;
 }
 
 table {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3%;
+    font-family: 'VT323', monospace;
 }
 
 td {
     width: 10%;
     text-align: center;
+    font-size: 25px;
 }
 
 #liste {
@@ -24,9 +27,11 @@ td {
 
 a {
     color: #000000;
+    text-decoration: none;
 }
-a:hover{
-    color: #da8fce;
+
+a:hover {
+    color: hsl(352, 100%, 60%);
 }
 
 .image {
@@ -52,9 +57,11 @@ a:hover{
     text-align: left;
     outline: none;
     font-size: 15px;
+    font-family: 'VT323', monospace;
 }
 
-.active, .pli:hover {
+.active,
+.pli:hover {
     background-color: #ccc;
 }
 
@@ -72,10 +79,11 @@ a:hover{
     float: right;
     margin-left: 5px;
 }
-  
+
 .active:after {
     content: "\2796";
- }
+}
+
 
 /* responsif ?
 @media only screen and (max-width : 600px) {
@@ -86,9 +94,27 @@ a:hover{
 }
 */
 
+
 /* pas d'impression */
+
 @media print {
     .image {
         display: none;
     }
+}
+
+
+/* scrollbar */
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+    height: 20%;
+}
+
+body::-webkit-scrollbar-track {
+    background: #83838a;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: hsl(352, 100%, 60%);
 }
