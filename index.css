@@ -85,16 +85,6 @@ a:hover {
 }
 
 
-/* responsif ?
-@media only screen and (max-width : 600px) {
-    .image {
-        height: 200px;
-        width: 200px;
-    }
-}
-*/
-
-
 /* pas d'impression */
 
 @media print {
